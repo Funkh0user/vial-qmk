@@ -19,11 +19,11 @@ enum my_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_WINDOWS] = KEYMAP(
-        TO(_LINUX),           LGUI(KC_TAB),       LCTL(KC_EQUAL),   LCTL(KC_MINUS),
-        LCTL(KC_A),           LCTL(KC_C),         LCTL(KC_V),
-        LCTL(KC_Z),           LCTL(KC_S),         LCTL(KC_Y),       CMD_PROMPT,
-        LSFT(LGUI(KC_S)),     LGUI(KC_PSCR),      LGUI(LALT(KC_R)),
-        LGUI(KC_L),           LCTL(LSFT(KC_ESC)), LCTL(LALT(KC_DEL))),
+        TO(_LINUX),          KC_SLSH,    KC_ASTR,    KC_MINS,
+		KC_HOME,    KC_NO,      KC_PGUP,
+		KC_NO,      KC_5,       KC_NO,      KC_PLUS,
+		KC_END,     KC_NO,      KC_PGDN,
+		KC_INS,     KC_DEL,     KC_ENT),
 
 	[_LINUX] = KEYMAP(
 		TO(_WINDOWS),    KC_SLSH,    KC_ASTR,    KC_MINS,
